@@ -52,7 +52,7 @@ export default tseslint.config({
   },
 })
 ```
-Please find some snapshots for **RecipeHub** app with attached performance report using **npx-unlighthouse** [Instead of running Lighthouse one page at a time, Unlighthouse scans your entire site in one go and scores every page.] Full command => npx unlighthouse --site
+Please find some snapshots for **RecipeHub** app with attached performance report using npx-unlighthouse [Instead of running Lighthouse one page at a time, Unlighthouse scans your entire site in one go and scores every page.] Full command => **npx unlighthouse --site**
 
 **List view mode**
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/140b6152-1e99-4030-92a7-500616acbfb0" />
