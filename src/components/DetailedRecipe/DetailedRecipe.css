@@ -1,0 +1,48 @@
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+
+    .recipe-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .recipe-image {
+        width: 25%; /* Image occupies 25% of the width */
+    }
+
+    .recipe-image img {
+        width: 100%; /* Image takes up the full width of its container */
+        height: auto;
+        padding: 5px;
+        border: 2px solid slategrey;
+    }
+
+    .recipe-details {
+        width: 70%; /* Details occupy 70% of the width */
+
+        .rating span {
+            color: orangered;
+            font-weight: bold;
+        }
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: left; /* Make headings align to the left */
+        width: 100%;
+    }
+
+    ul,
+    ol {
+        width: 100%;
+        /* list-style-type: square; */
+        padding-left: 0;
+        margin: 0 16px;
+    }
+}

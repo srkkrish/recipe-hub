@@ -1,0 +1,125 @@
+.recipe-home {
+    padding: 0 20px;
+
+    .view-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+                background-color: #005b9a;
+            }
+        }
+    }
+
+    .info .note {
+        color: #ff5733;
+    }
+
+    .list-view {
+        /* List Styles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* List Item Styles */
+        li {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid grey;
+            transition: transform 0.3s ease-in-out; /* Optional: adds transition for the whole item on hover */
+        }
+
+        .recipe-item:hover {
+            transform: translateY(-5px); /* Optional: adds a slight lift effect when hovering over the recipe item */
+            background-color: #005b9a1c;
+        }
+
+        .recipe-image img {
+            width: 100px; /* Adjust width as necessary */
+            height: 100px; /* Adjust height as necessary */
+            object-fit: cover;
+            margin-right: 20px; /* Space between image and content */
+            transition:
+                transform 0.3s ease,
+                filter 0.3s ease; /* Smooth transition for scaling and filter effect */
+        }
+
+        .recipe-image img:hover {
+            transform: scale(1.1); /* Slightly enlarges the image on hover */
+            filter: brightness(1.1); /* Increases brightness when hovered */
+        }
+
+        .recipe-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipe-name {
+            color: #005b9a;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .recipe-info {
+            color: #555;
+            margin-top: 5px;
+            font-size: 1em;
+        }
+    }
+
+    .grid-view {
+        margin-top: 16px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody {
+            .recipe-name {
+                color: blue;
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-style: dotted;
+            }
+
+            tr {
+                cursor: pointer;
+                &:hover {
+                    background-color: #005b9a1c;
+                }
+
+                td img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

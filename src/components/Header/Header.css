@@ -1,0 +1,27 @@
+header.recipehub-header {
+    gap: 20px;
+    color: #fff;
+    display: flex;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: cursive;
+    align-items: center;
+    background-color: #005b9a;
+    justify-content: space-between;
+    box-shadow: 1px 2px 3px lightgrey;
+
+    .header-left {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .header-right span {
+        cursor: pointer;
+    }
+}
